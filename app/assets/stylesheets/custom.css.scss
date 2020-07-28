@@ -1,5 +1,46 @@
 @import 'bootstrap/dist/css/bootstrap';
 
 .navbar {
-  background-color: #AAA !important;
+  background-color: #000 !important;
   }
+
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.nav-link{
+  color: white !important;
+}
+
+.container-xl{
+    margin-top: 4%;
+}
+
+.jumbotron{
+  background-image: asset-url("alphablogpicture.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 425px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: #ddd;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #000 !important;
+}
