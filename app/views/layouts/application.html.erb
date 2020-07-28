@@ -4,15 +4,15 @@
     <title>AlphaBlog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body class="d-flex flex-column">
     <%= render 'layouts/navbar' %>
-    <%= render 'layouts/flashMessages' %>
-    <%= yield %>
+    <div id="page-content">
+      <%= render 'shared/flashmessages' %>
+      <%= yield %>
+    </div>
     <%= render 'layouts/footer' %>
   </body>
 </html>
